@@ -112,8 +112,8 @@ values(?,?,?,?,?)',[@username,@phone,@datetime,@choice_form,@color]
 
   save_log_visit
 
-  @send = "thx for visit #{@username}, #{@phone}, #{@choice_form}, #{@color}, #{@datetime}"
-  erb :visit
+
+  erb "<h1> Спасибо вы записаны </h1>"
 
 end
 def save_db_visit
