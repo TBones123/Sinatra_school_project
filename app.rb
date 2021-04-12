@@ -4,29 +4,33 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'pony'
 require 'sqlite3'
-
+#check barber exists in table
 def is_barber_exists? db, name
   db.execute('select * from Barbers where name=?', [name]).length > 0
 end
-
+#init barbers if he not exist in table
 def seed_db db, barbers
-
   barbers.each do |barber|
     if !is_barber_exists? db, barber
       db.execute 'insert into Barbers (name) values (?)', [barber]
     end
   end
-
-
 end
-
-
+#create db and change resault in hash
 def get_db
   db = SQLite3::Database.new 'db/barbershop.db'
   db.results_as_hash = true
   return db
 end
 
+before do
+  db = get_db
+  @barbers = db.execute 'select * from Barbers'
+end
+
+
+
+#configure meth create db Users and Barbers
 configure do
   db = get_db
   # @db = SQLite3::Database.new 'barbershop.db'
@@ -105,14 +109,9 @@ values(?,?,?,?,?)',[@username,@phone,@datetime,@choice_form,@color]
 
 
 
-  # hh.each do |key, value|
-  #   if params[key] == ''
-  #     @error = hh[key]
-  #     return erb :visit
-  #   end
-  # end
 
   save_log_visit
+
   @send = "thx for visit #{@username}, #{@phone}, #{@choice_form}, #{@color}, #{@datetime}"
   erb :visit
 
