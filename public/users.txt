@@ -1,0 +1,26 @@
+name  phone:  choice: 
+name  phone:  choice: 
+name  phone:  choice: 
+name  phone:  choice: 
+name  phone:  choice: Walter White
+name  phone:  choice: Walter White
+name  phone:  choice: Walter White
+name  phone:  choice: Walter White
+name asdasd phone: 123123213213 choice: Jessie Pinkman
+name asdasd phone: 123123213213 choice: Jessie Pinkman
+name dddddddddd phone:  choice: Walter White
+name  phone:  choice: Walter White
+name asd phone: 0662643473 choice: Walter White
+name asd phone: 0662643473 choice: Walter White
+name asd phone: 0662643473 choice: Walter White
+name asd phone: 0662643473 choice: Walter White
+name dddd phone: 0662643473 choice: Walter White
+name dddd phone: 0662643473 choice: Walter White
+name asd phone: 123123123123 choice: Walter White
+name asdasdasd phone: 123123123123 choice: Gus Fring
+name jjjasd phone: +38 (066) 264-34-73 choice: Jessie Pinkman
+name jjjasd phone: +38 (066) 264-34-73 choice: Walter White
+name jhon phone: 1234123 choice: Jessie Pinkman
+name test phone: 0662643473 choice: Walter White
+name test phone: 0662643473 choice: Walter White
+name test phone: 0662643473 choice: Walter White
